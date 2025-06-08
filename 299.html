@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>End Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      font-family: 'Cairo', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .end-section {
+      background: #fff;
+      border-radius: 20px;
+      padding: 50px 30px;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .end-section h1 {
+      font-size: 36px;
+      color: #343a40;
+      margin-bottom: 20px;
+    }
+
+    .end-section p {
+      font-size: 20px;
+      color: #6c757d;
+      margin-bottom: 40px;
+      animation: slideUp 1.2s ease;
+    }
+
+    .btn-main {
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #007bff;
+      color: white;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      animation: bounceIn 1.8s ease;
+      display: inline-block;
+    }
+
+    .btn-main:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+      color: black;
+    }
+
+    .arrow-icon {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 28px;
+      color: #007bff;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .arrow-icon:hover {
+      color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes bounceIn {
+      0% {transform: scale(0.8); opacity: 0;}
+      60% {transform: scale(1.05);}
+      100% {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <a href="298.html" class="arrow-icon">←</a>
+
+  <div class="end-section">
+    <h1>🎉 تم الانتهاء!</h1>
+    <p>شكراً لك على إكمال الدورة. نتمنى لك التوفيق في رحلتك التعليمية والمهنية!</p>
+    
+    <!-- Main button: الصفحة الرئيسية -->
+    <a class="btn btn-main" href="course.html">الصفحة الرئيسية</a>
+    
+    <!-- New button: Lock Page -->
+    <a class="btn btn-main mt-3 d-block" href="index.html">🔒 صفحة القفل</a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
